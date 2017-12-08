@@ -18,7 +18,7 @@ namespace IwansMod.Tiles
             drop = mod.ItemType("VikingOre"); // What item drops after destorying the tile
             ModTranslation name = CreateMapEntryName();
             name.SetDefault("Mythical Ore");
-            //AddMapEntry(new Color(272, 97, 59), ""); // Colour of Tile on Map
+            AddMapEntry(new Color(187, 78, 181), name);// Colour of Tile on Map
             minPick = 100; // What power pick minimum is needed to mine this block.
         }
 
