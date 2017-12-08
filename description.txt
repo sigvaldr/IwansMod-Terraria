@@ -2,3 +2,11 @@ A random mod designed to help me learn the ins and outs of modding terraria.
 ----------------------------------------------------------------------------
 I WILL NOT BE PROVIDING SUPPORT FOR THIS MOD.
 DOWNLOAD AT YOUR OWN RISK!
+----------------------------------------------------------------------------
+
+Changelog:
+
+v0.5.2:
+	*Added Mythical Ore
+	*Added WorldGen for Mythical Ore
+	*Changed recipe of Viking Myth Metal to require Mythical Ore.
