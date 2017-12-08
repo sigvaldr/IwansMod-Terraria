@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace IwansMod.Items
+namespace IwansMod.Items.Weapons
 {
 	public class AncientVikingSword : ModItem
 	{
@@ -14,14 +14,15 @@ namespace IwansMod.Items
 		{
 			item.damage = 500;
 			item.melee = true;
+            item.crit = 46;
 			item.width = 40;
 			item.height = 40;
 			item.useTime = 55;
-			item.useAnimation = 20;
+			item.useAnimation = 55;
 			item.useStyle = 1;
 			item.knockBack = 12;
 			item.value = 10000;
-			item.rare = 8;
+			item.rare = -12;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}
@@ -29,8 +30,8 @@ namespace IwansMod.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.HallowedBar, 15);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddIngredient(mod.ItemType("VikingMythMetal"), 30);
+			recipe.AddTile(TileID.MythrilAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

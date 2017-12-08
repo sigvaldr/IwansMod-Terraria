@@ -6,7 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace IwansMod.Items //The directory for your .cs and .png; Example: Mod Sources/TutorialMOD/Items
+namespace IwansMod.Items.Weapons //The directory for your .cs and .png; Example: Mod Sources/TutorialMOD/Items
 {
     public class BlazeYoyo : ModItem    //make sure the sprite file is named like the class name (CustomYoyo)
     {
@@ -42,8 +42,8 @@ namespace IwansMod.Items //The directory for your .cs and .png; Example: Mod Sou
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.HellstoneBar, 10); //this is how to add an ingredient from vanilla terraria,
-            recipe.AddIngredient(ItemID.HallowedBar, 10); //this is how to add an ingredient from your mod,  so to craft this item you need 10 Dirt Block and 10 CustomOre
-            recipe.AddTile(TileID.MythrilAnvil);  //this is where to craft the item ,WorkBenches = all WorkBenches    Anvils = all anvils , MythrilAnvil = Mythril Anvil and Orichalcum Anvil, Furnaces = all furnaces , DemonAltar = Demon Altar and Crimson Altar , TinkerersWorkbench = Tinkerer's Workbench
+            recipe.AddIngredient(mod.ItemType("VikingMythMetal"), 20);
+            recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
