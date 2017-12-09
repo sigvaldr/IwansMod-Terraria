@@ -1,10 +1,16 @@
 A random mod designed to help me learn the ins and outs of modding terraria.
-----------------------------------------------------------------------------
+------------------------------------
 I WILL NOT BE PROVIDING SUPPORT FOR THIS MOD.
 DOWNLOAD AT YOUR OWN RISK!
-----------------------------------------------------------------------------
+------------------------------------
 
 Changelog:
+
+v0.5.4:
+	*Added Muzm boss (NO AI YET)
+v0.5.3:
+	*Added Ancient Viking NPC
+	*Added Viking Pickhamaxe
 
 v0.5.2:
 	*Added Mythical Ore
