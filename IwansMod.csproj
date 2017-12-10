@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Items\Bags\MuzmBossBag.cs" />
+    <Compile Include="Items\Blocks\MuzmBossTrophy.cs" />
     <Compile Include="Items\Blocks\VikingOre.cs" />
     <Compile Include="Items\Summons\MuzmBossSummon.cs" />
     <Compile Include="Items\Tools\VikingHook.cs" />
@@ -48,6 +49,7 @@
     <Compile Include="NPCs\MuzmBoss.cs" />
     <Compile Include="Projectiles\BlazeYoyoProj.cs" />
     <Compile Include="Projectiles\VikingHookProj.cs" />
+    <Compile Include="Tiles\MuzmBossTrophyTile.cs" />
     <Compile Include="Tiles\VikingOreTile.cs" />
   </ItemGroup>
   <ItemGroup>

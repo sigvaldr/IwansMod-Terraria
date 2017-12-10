@@ -6,6 +6,9 @@ DOWNLOAD AT YOUR OWN RISK!
 
 Changelog:
 
+v0.5.6:
+	*Added trophy for Muzm Boss
+	*Added trophy drop to Muzm Boss
 v0.5.5:
 	*Added Strange Turban (summons Muzm boss)
 	*Added Boss bag for Muzm boss

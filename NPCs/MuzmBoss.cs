@@ -48,7 +48,8 @@ namespace IwansMod.NPCs
             npc.noTileCollide = true; // Will not collide with the tiles. 
             npc.HitSound = SoundID.NPCHit1;
             npc.DeathSound = SoundID.NPCDeath1;
-            music = MusicID.Boss1;
+            //music = MusicID.Boss1;
+            music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/MuzmBoss1");
             bossBag = mod.ItemType("MuzmBossBag"); // Needed for the NPC to drop loot bag.
         }
 
@@ -167,11 +168,12 @@ namespace IwansMod.NPCs
             }
             else
             {
-                if (Main.rand.Next(5) == 0) // For items that you want to have a chance to drop 
+                if (Main.rand.Next(11) == 0) // For items that you want to have a chance to drop 
                 {
-                    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("BlazeYoyo"));
+                    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("MuzmBossTrophy"));
                 }
-                //Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("TutorialSummonItem")); // For Items that you want to always drop
+
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("VikingMythMetal"), 5); // For Items that you want to always drop
             }
         }
 

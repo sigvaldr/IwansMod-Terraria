@@ -55,6 +55,12 @@ namespace IwansMod.Items.Bags
                 player.QuickSpawnItem(mod.ItemType("VikingHook"));
             }
 
+            //Trophy - 1/5
+            if (Main.rand.Next(6) == 0) // For items that you want to have a chance to drop 
+            {
+                player.QuickSpawnItem(mod.ItemType("MuzmBossTrophy"));
+            }
+
             player.QuickSpawnItem(mod.ItemType("VikingMythMetal"), 5); // For Items that you want to always drop
         }
     }
