@@ -19,8 +19,8 @@ namespace IwansMod.NPCs
         public override void SetDefaults()
         {
             npc.CloneDefaults(NPCID.ArmoredViking);
-            npc.damage = 200;
-            npc.defense = 5;
+            npc.damage = 50;
+            npc.defense = 10;
             npc.lifeMax = 2000;
             npc.knockBackResist = 0.75f;
             Main.npcFrameCount[npc.type] = Main.npcFrameCount[NPCID.ArmoredViking]; //Main.npcFrameCount[3];
@@ -30,13 +30,30 @@ namespace IwansMod.NPCs
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            return SpawnCondition.OverworldNightMonster.Chance * 0.50f;
+            //return SpawnCondition.OverworldNightMonster.Chance * 0.70f;
+            if (Main.hardMode == true)
+            {
+                return SpawnCondition.OverworldNightMonster.Chance * 0.70f;
+            }
+            else
+            {
+                return 0f;
+            }
         }
 
         public override void NPCLoot()
         {
-            if (Main.rand.Next(1001) == 0)
+            //Drop Blaze yoyo - 1/100
+            if (Main.rand.Next(101) == 0)
+            {
                 Item.NewItem(npc.getRect(), mod.ItemType("BlazeYoyo"), 1);
+            }
+
+            //Drop Muzm boss summon - 1/21
+            if (Main.rand.Next(21) == 0)
+            {
+                Item.NewItem(npc.getRect(), mod.ItemType("MuzmBossSummon"), 1);
+            }
         }
     }
 }

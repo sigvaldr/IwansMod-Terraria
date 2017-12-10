@@ -6,6 +6,14 @@ DOWNLOAD AT YOUR OWN RISK!
 
 Changelog:
 
+v0.5.5:
+	*Added Strange Turban (summons Muzm boss)
+	*Added Boss bag for Muzm boss
+	*Muzm Boss can now only be spawned at night
+	*Nerfed Ancient Vikings
+	*Ancient Vikings now only spawn in hardmode
+	*Ancient Vikings now have a chance to drop strange turban
+
 v0.5.4:
 	*Added Muzm boss (NO AI YET)
 v0.5.3:

@@ -34,7 +34,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="**\*.cs" />
+    <Compile Include="Items\Bags\MuzmBossBag.cs" />
+    <Compile Include="Items\Blocks\VikingOre.cs" />
+    <Compile Include="Items\Summons\MuzmBossSummon.cs" />
+    <Compile Include="Items\Tools\VikingHook.cs" />
+    <Compile Include="Items\Tools\VikingPickhamaxe.cs" />
+    <Compile Include="Items\VikingMythMetal.cs" />
+    <Compile Include="Items\Weapons\AncientVikingSword.cs" />
+    <Compile Include="Items\Weapons\BlazeYoyo.cs" />
+    <Compile Include="IwansMod.cs" />
+    <Compile Include="IwansModWorld.cs" />
+    <Compile Include="NPCs\AncientViking.cs" />
+    <Compile Include="NPCs\MuzmBoss.cs" />
+    <Compile Include="Projectiles\BlazeYoyoProj.cs" />
+    <Compile Include="Projectiles\VikingHookProj.cs" />
+    <Compile Include="Tiles\VikingOreTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">

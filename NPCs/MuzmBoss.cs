@@ -14,8 +14,8 @@ namespace IwansMod.NPCs
     [AutoloadBossHead]
     class MuzmBoss : ModNPC
     {
-        private Player player;
-        private float speed;
+        //private Player player;
+        //private float speed;
 
         public override void SetStaticDefaults()
         {
@@ -25,13 +25,21 @@ namespace IwansMod.NPCs
 
         public override void SetDefaults()
         {
-            npc.aiStyle = -1; // Will not have any AI from any existing AI styles. 
+            //npc.aiStyle = -1; // Will not have any AI from any existing AI styles. 
+            //npc.aiStyle = 30; // Use AI from Retinazer
+            npc.aiStyle = 31; //Use AI from Martian Spazmatism
+
+
             npc.lifeMax = 50000; // The Max HP the boss has on Normal
             npc.damage = 20; // The base damage value the boss has on Normal
             npc.defense = 25; // The base defense on Normal
             npc.knockBackResist = 0f; // No knockback
-            npc.width = 282;
-            npc.height = 327;
+
+            //npc.width = 282;
+            //npc.height = 327;
+            npc.height = 282;
+            npc.width = 327;
+
             npc.value = 10000;
             npc.npcSlots = 1f; // The higher the number, the more NPC slots this NPC takes.
             npc.boss = true; // Is a boss
@@ -41,7 +49,7 @@ namespace IwansMod.NPCs
             npc.HitSound = SoundID.NPCHit1;
             npc.DeathSound = SoundID.NPCDeath1;
             music = MusicID.Boss1;
-            //bossBag = mod.ItemType("TutorialBossBag"); // Needed for the NPC to drop loot bag.
+            bossBag = mod.ItemType("MuzmBossBag"); // Needed for the NPC to drop loot bag.
         }
 
         public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
