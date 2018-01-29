@@ -8,7 +8,7 @@ namespace IwansMod.Items.Blocks
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Muzm Trophy");
-            Tooltip.SetDefault("You defeated Muzm the Muslim!");
+            Tooltip.SetDefault("You defeated Mysterious Muzm!");
         }
 
         public override void SetDefaults()

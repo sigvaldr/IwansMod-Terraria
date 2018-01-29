@@ -27,7 +27,7 @@ namespace IwansMod
                         WorldGen.TileRunner(
                             WorldGen.genRand.Next(0, Main.maxTilesX), // X Coord of the tile
                             WorldGen.genRand.Next((int)WorldGen.worldSurfaceLow, Main.maxTilesY), // Y Coord of the tile
-                            (double)WorldGen.genRand.Next(9, 18), // Strength (High = more) default = 3, 6
+                            (double)WorldGen.genRand.Next(3, 6), // Strength (High = more) default = 3, 6
                             WorldGen.genRand.Next(2, 6), // Steps 
                             mod.TileType("VikingOreTile"), // The tile type that will be spawned
                             false, // Add Tile ???

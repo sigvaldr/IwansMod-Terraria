@@ -19,7 +19,7 @@ namespace IwansMod.NPCs
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Muzm the Muslim");
+            DisplayName.SetDefault("Mysterious Muzm");
             Main.npcFrameCount[npc.type] = 1;
         }
 
@@ -49,7 +49,7 @@ namespace IwansMod.NPCs
             npc.HitSound = SoundID.NPCHit1;
             npc.DeathSound = SoundID.NPCDeath1;
             //music = MusicID.Boss1;
-            music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/MuzmBoss1");
+            music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/MuzmBoss");
             bossBag = mod.ItemType("MuzmBossBag"); // Needed for the NPC to drop loot bag.
         }
 

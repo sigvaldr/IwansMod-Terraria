@@ -29,6 +29,7 @@ namespace IwansMod.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(mod.ItemType("VikingOre"), 5);
+            recipe.AddIngredient(ItemID.LunarBar, 2);
             recipe.SetResult(this, 1);
             recipe.AddTile(TileID.AdamantiteForge);
             recipe.AddRecipe();

@@ -37,26 +37,26 @@ namespace IwansMod.Items.Bags
         {
             player.TryGettingDevArmor(); // This will have a chance to spawn the Dev Armour.
 
-            //Yoyo - 1/4
-            if (Main.rand.Next(4) == 0) 
+            //Yoyo - 1/25
+            if (Main.rand.Next(26) == 0) 
             {
                 player.QuickSpawnItem(mod.ItemType("BlazeYoyo"));
             }
 
-            //Ancient Sword - 1/4
-            if (Main.rand.Next(4) == 0) // For items that you want to have a chance to drop 
+            //Ancient Sword - 1/20
+            if (Main.rand.Next(21) == 0)
             {
                 player.QuickSpawnItem(mod.ItemType("AncientVikingSword"));
             }
 
-            //Viking Hook - 1/10
-            if (Main.rand.Next(11) == 0) // For items that you want to have a chance to drop 
+            //Viking Hook - 1/15
+            if (Main.rand.Next(16) == 0)
             {
                 player.QuickSpawnItem(mod.ItemType("VikingHook"));
             }
 
             //Trophy - 1/5
-            if (Main.rand.Next(6) == 0) // For items that you want to have a chance to drop 
+            if (Main.rand.Next(6) == 0)
             {
                 player.QuickSpawnItem(mod.ItemType("MuzmBossTrophy"));
             }

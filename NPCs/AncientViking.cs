@@ -43,14 +43,8 @@ namespace IwansMod.NPCs
 
         public override void NPCLoot()
         {
-            //Drop Blaze yoyo - 1/100
-            if (Main.rand.Next(101) == 0)
-            {
-                Item.NewItem(npc.getRect(), mod.ItemType("BlazeYoyo"), 1);
-            }
-
-            //Drop Muzm boss summon - 1/21
-            if (Main.rand.Next(21) == 0)
+            //Drop Muzm boss summon - 1/500
+            if (Main.rand.Next(501) == 0)
             {
                 Item.NewItem(npc.getRect(), mod.ItemType("MuzmBossSummon"), 1);
             }

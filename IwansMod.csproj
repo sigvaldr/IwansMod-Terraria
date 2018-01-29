@@ -40,6 +40,7 @@
     <Compile Include="Items\Summons\MuzmBossSummon.cs" />
     <Compile Include="Items\Tools\VikingHook.cs" />
     <Compile Include="Items\Tools\VikingPickhamaxe.cs" />
+    <Compile Include="Items\Trinkets\VikingShield.cs" />
     <Compile Include="Items\VikingMythMetal.cs" />
     <Compile Include="Items\Weapons\AncientVikingSword.cs" />
     <Compile Include="Items\Weapons\BlazeYoyo.cs" />

@@ -6,6 +6,11 @@ DOWNLOAD AT YOUR OWN RISK!
 
 Changelog:
 
+v0.5.8:
+    *Changed spawn rates and recipes for balancing
+    *Added Viking Shield
+v0.5.7:
+	*Fixed names and music for Muzm boss
 v0.5.6:
 	*Added trophy for Muzm Boss
 	*Added trophy drop to Muzm Boss
