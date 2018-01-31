@@ -35,7 +35,7 @@ namespace IwansMod.Items.Trinkets
             //}
 
             //debugging!
-            Main.NewText("Current def: " + player.statDefense.ToString(), 255, 255, 255);
+            //Main.NewText("Current def: " + player.statDefense.ToString(), 255, 255, 255);
             player.statDefense = player.statDefense + player.statDefense;
         }
 

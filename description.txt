@@ -6,6 +6,8 @@ DOWNLOAD AT YOUR OWN RISK!
 
 Changelog:
 
+v0.5.9:
+    *Fixed Viking Shield spamming chat
 v0.5.8:
     *Changed spawn rates and recipes for balancing
     *Added Viking Shield
